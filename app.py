@@ -4,11 +4,20 @@ import gradio as gr
 from sentence_transformers import SentenceTransformer, util
 from openai import OpenAI  # Ensure you have the correct OpenAI library installed
 
+from dotenv import load_dotenv
+
+
+# Load .env file
+load_dotenv()
+
+# Access the token
+API = os.getenv("api")
+
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
 client = OpenAI(
-    api_key= "xai-nVqv9lhAynMlTkPRq1mg0KjEIKWca5SFoZRM4eDWeAnNmJkAq0BKNRb6Sgn0wNP11Q8muDUjnIcoZMBW",
+    api_key= API,
     base_url="https://api.x.ai/v1",
 )
 
