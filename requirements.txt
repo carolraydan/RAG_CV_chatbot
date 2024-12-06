@@ -1,0 +1,4 @@
+requests
+gradio
+sentence-transformers
+openai
