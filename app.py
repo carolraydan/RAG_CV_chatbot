@@ -2,12 +2,12 @@ import os
 import requests
 import gradio as gr
 from sentence_transformers import SentenceTransformer, util
-from openai import OpenAI  # Ensure you have the correct OpenAI library installed
+import openai  # Ensure you have the correct OpenAI library installed
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
-client = OpenAI(
+client = openai(
     api_key="xai-nVqv9lhAynMlTkPRq1mg0KjEIKWca5SFoZRM4eDWeAnNmJkAq0BKNRb6Sgn0wNP11Q8muDUjnIcoZMBW",
     base_url="https://api.x.ai/v1",
 )
