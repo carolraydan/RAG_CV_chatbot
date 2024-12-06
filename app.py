@@ -8,7 +8,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
 client = openai(
-    api_key="xai-nVqv9lhAynMlTkPRq1mg0KjEIKWca5SFoZRM4eDWeAnNmJkAq0BKNRb6Sgn0wNP11Q8muDUjnIcoZMBW",
+    api_key=api_key,
     base_url="https://api.x.ai/v1",
 )
 
